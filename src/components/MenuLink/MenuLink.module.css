@@ -1,0 +1,10 @@
+.link {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-family: var(--font-raleway);
+    color: var(--color-blue-dark);
+}
+
+.linkSelect {
+    text-decoration: underline;
+}
