@@ -1,0 +1,20 @@
+.navegation {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-family: var(--font-raleway);
+}
+
+@media (min-width: 744px) {
+    .navegation {
+        height: 112px;
+    }
+}

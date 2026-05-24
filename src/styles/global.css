@@ -92,5 +92,5 @@ body {
   background-color: var(--color-background);
   color: var(--color-neutral-dark);
   font-family: var(--font-raleway);
-  line-height: 1.5; /* Ajustado para melhor leitura, o reset deixa 1 (muito espremido) */
+  line-height: 1.5;
 }
