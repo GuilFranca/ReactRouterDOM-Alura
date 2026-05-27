@@ -75,8 +75,8 @@ textarea:focus, input:focus, select:focus {
   --color-gray: #444444;
 
   /* Tipografia & Espaçamento */
-  --font-playfair: "Playfair Display", serif;
-  --font-raleway: "Raleway", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  --font-primary: "Raleway", sans-serif;
 
   /* --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -89,8 +89,8 @@ textarea:focus, input:focus, select:focus {
    3. ESTILOS GLOBAIS REAIS (Suas customizações)
    ========================================================================== */
 body {
-  background-color: var(--color-background);
+  /* background-color: var(--color-background);
   color: var(--color-neutral-dark);
-  font-family: var(--font-raleway);
+  font-family: var(--font-raleway); */
   line-height: 1.5;
 }
