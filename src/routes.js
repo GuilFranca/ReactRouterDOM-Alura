@@ -3,17 +3,41 @@ import AboutMe from "./pages/aboutMe";
 import Home from "./pages/home";
 import Menu from "./components/Menu";
 import Footer from "components/Footer";
+import DefaultPage from "components/DefaultPage";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+
       <Menu />
+
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="sobre-mim" element={<AboutMe />} />
+
+        <Route path="/" element={<DefaultPage />}>
+          <Route path="/" element={<Home />} />
+          <Route path="sobre-mim" element={<AboutMe />} />
+        </Route>
+
+        {/* 
+          Na rota "/", a estrutura a ser renderizada é:
+
+          <DefaultPage>
+            <Home />
+          </DefaultPage>
+
+          Na rota "sobre-mim", a estrutura a ser renderizada é:
+
+          <DefaultPage>
+            <AboutMe />
+          </DefaultPage>
+
+         */}
+
         <Route path="*" element={<div>Página não encontrada</div>} />
       </Routes>
+
       <Footer />
+
     </BrowserRouter>
   );
 }
