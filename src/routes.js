@@ -14,7 +14,7 @@ function AppRoutes() {
       <Routes>
 
         <Route path="/" element={<DefaultPage />}>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="sobre-mim" element={<AboutMe />} />
         </Route>
 
@@ -34,7 +34,7 @@ function AppRoutes() {
          */}
 
         <Route path="*" element={<div>Página não encontrada</div>} />
-        
+
       </Routes>
 
       <Footer />
