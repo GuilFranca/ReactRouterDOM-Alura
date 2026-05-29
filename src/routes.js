@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutMe from "./pages/aboutMe";
-import Home from "./pages/home";
+import AboutMe from "./pages/AboutMe";
+import Home from "./pages/Home";
 import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import DefaultPage from "components/DefaultPage";
