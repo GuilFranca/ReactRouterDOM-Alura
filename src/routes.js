@@ -34,6 +34,7 @@ function AppRoutes() {
          */}
 
         <Route path="*" element={<div>Página não encontrada</div>} />
+        
       </Routes>
 
       <Footer />
