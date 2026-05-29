@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import DefaultPage from "components/DefaultPage";
+import Post from "pages/Post";
 
 function AppRoutes() {
   return (
@@ -16,9 +17,11 @@ function AppRoutes() {
         <Route path="/" element={<DefaultPage />}>
           <Route index element={<Home />} />
           <Route path="sobre-mim" element={<AboutMe />} />
+          <Route path="post/:id" element={<Post />} />
         </Route>
 
         {/* 
+
           Na rota "/", a estrutura a ser renderizada é:
 
           <DefaultPage>

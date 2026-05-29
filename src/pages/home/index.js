@@ -1,15 +1,14 @@
-import Banner from "components/Banner";
 import styles from "./home.module.css";
 
 import posts from "json/posts.json"
-import Post from "components/Post";
+import CardPost from "components/CardPost";
 
 export default function Home() {
     return (
         <ul className={styles.posts}>
             {posts.map((post) => (
                 <li key={post.id}>
-                    <Post post={post} />
+                    <CardPost post={post} />
                 </li>
             ))}
         </ul>
