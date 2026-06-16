@@ -1,0 +1,53 @@
+.bannerNotFound {
+    text-align: center;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    padding: 48px 16px 0;
+    height: 753px;
+    margin-bottom: 160px;
+}
+
+.title {
+    color: var(--color-blue);
+    font-family: var(--font-secondary);
+    font-size: 64px;
+}
+
+.subTitle {
+    font-family: var(--font-secondary);
+    font-size: 36px;
+    margin-bottom: 36px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.paragraphNotFound {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.buttonVoltar {
+    padding: 24px 48px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 24px;
+    font-size: 24px;
+    font-family: var(--font-primary);
+    margin-bottom: 40px;
+}
+
+.containerBtnDog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerBtnDog img {
+    position: absolute;
+    top: 100px;
+    width: 306px;
+    height: 339px;
+}

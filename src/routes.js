@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import DefaultPage from "components/DefaultPage";
 import Post from "pages/Post";
+import NotFound from "pages/NotFound";
 
 function AppRoutes() {
   return (
@@ -36,7 +37,7 @@ function AppRoutes() {
 
          */}
 
-        <Route path="*" element={<div>Página não encontrada</div>} />
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
 
