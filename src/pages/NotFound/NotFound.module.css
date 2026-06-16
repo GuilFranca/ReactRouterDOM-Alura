@@ -36,6 +36,7 @@
     font-size: 24px;
     font-family: var(--font-primary);
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .containerBtnDog {
@@ -50,4 +51,41 @@
     top: 100px;
     width: 306px;
     height: 339px;
+}
+
+@media screen and (min-width: 768px) {
+    .bannerNotFound {
+        height: 744px;
+        margin-bottom: 394px;
+    }
+
+    .title {
+        font-size: 96px;
+        margin-bottom: 35px;
+    }
+
+    .subTitle {
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+
+    .containerBtnDog {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .buttonVoltar {
+        position: absolute;
+        top: 0;
+        left: 100px;
+        font-size: 21px;
+    }
+
+    .containerBtnDog img {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        width: 423px;
+        height: 469px;
+    }
 }
