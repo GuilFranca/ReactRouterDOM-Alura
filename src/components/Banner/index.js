@@ -19,6 +19,7 @@ export default function Banner() {
                         className={styles.colorCircle}
                         src={colorCircle}
                         aria-hidden={true}
+                        alt="Circulo colorido"
                     />
 
                     <img
