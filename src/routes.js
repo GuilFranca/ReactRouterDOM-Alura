@@ -11,8 +11,9 @@ import ScrollToTop from "components/ScrollToTop";
 function AppRoutes() {
   return (
     <BrowserRouter>
-    
+
       <ScrollToTop />
+      
       <Menu />
 
       <Routes>
