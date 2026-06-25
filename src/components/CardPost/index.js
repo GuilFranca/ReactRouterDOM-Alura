@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./CardPost.module.css";
 import MainButton from "components/MainButton";
+import ScrollToTop from "components/ScrollToTop";
 
 export default function CardPost({ post }) {
 

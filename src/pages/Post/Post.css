@@ -36,7 +36,7 @@
     font-size: 1.5rem;
 }
 
-.post-markdown-container ul > li {
+.post-markdown-container ul>li {
     margin-bottom: 1rem;
     list-style: disc;
 }
@@ -51,6 +51,21 @@
 
 .post-markdown-container pre {
     overflow-x: auto;
+}
+
+.otherPostsTitle {
+    font-family: var(--fonte-secundaria);
+    color: #363031;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.otherPostsContainer {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1100px) {

@@ -1,9 +1,10 @@
 import styles from "./ModelPost.module.css";
 
-export default function ModelPost({ children, fotoCapa, titulo }) {
+export default function ModelPost({ children, fotoCapa, titulo, filteredPosts }) {
+
     return (
         <article className={styles.postModeloContainer}>
-            <div 
+            <div
                 className={styles.fotoCapa}
                 style={{ backgroundImage: `url(${fotoCapa})` }}
             ></div>

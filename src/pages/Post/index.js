@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import "./Post.css";
 import NotFound from "pages/NotFound";
 import DefaultPage from "components/DefaultPage";
+import CardPost from "components/CardPost";
 
 export default function Post() {
 
@@ -17,6 +18,11 @@ export default function Post() {
     if (!post) {
         return <NotFound />
     }
+
+    const filteredPosts = posts
+        .filter(post => post.id !== Number(parametros.id))
+        .sort((a, b) => b.id - a.id) // Ordena de forma decrescente
+        .slice(0, 4); // Seleciona somente 4 posts
 
     return (
         // Forma que eu fiz
@@ -42,12 +48,23 @@ export default function Post() {
                     <ModelPost
                         fotoCapa={`/assets/posts/${post.id}/capa.png`}
                         titulo={post.titulo}
+                        filteredPosts={filteredPosts}
                     >
                         <div className="post-markdown-container">
                             <ReactMarkdown>
                                 {post.texto}
                             </ReactMarkdown>
                         </div>
+
+                        <h2 className="otherPostsTitle">Outros posts que você pode gostar:</h2>
+
+                        <ul className="otherPostsContainer">
+                            {filteredPosts.map((post) => (
+                                <li key={post.id}>
+                                    <CardPost post={post} />
+                                </li>
+                            ))}
+                        </ul>
 
                     </ModelPost>
                 } />
