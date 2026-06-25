@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import styles from "./NotFound.module.css"
 import dog from "assets/dogNotFound.png";
+import MainButton from "components/MainButton";
 
 export default function NotFound() {
 
@@ -23,11 +24,7 @@ export default function NotFound() {
 
             <div className={styles.containerBtnDog}>
 
-                <button 
-                    className={styles.buttonVoltar} onClick={() => navigate(-1)}
-                >
-                    Voltar
-                </button>
+                <MainButton onClick={() => navigate(-1)} className={styles.buttonVoltar}>Voltar</MainButton>
 
                 <img src={dog} alt="Cachorrinho" />
 
